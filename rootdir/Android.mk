@@ -60,6 +60,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE       := fstab.qcom
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
+ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS),true)
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
 LOCAL_SRC_FILES    := etc/fstab_AB.qcom
 else
@@ -82,6 +83,11 @@ LOCAL_SRC_FILES    := etc/fstab.qcom
 LOCAL_MODULE_PATH  := $(TARGET_RAMDISK_OUT)
 endif
 include $(BUILD_PREBUILT)
+else
+LOCAL_SRC_FILES    := etc/fstab_SAR.qcom
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
+include $(BUILD_PREBUILT)
+endif
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := ueventd.qcom.rc
