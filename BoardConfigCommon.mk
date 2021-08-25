@@ -81,6 +81,10 @@ DEVICE_MANIFEST_FILE += hardware/qcom-caf/sm8150/media/conf_files/sm6150/c2_mani
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_sm6150
+TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_sm6150
+
 # Kernel
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
 BOARD_BOOT_HEADER_VERSION := 3
