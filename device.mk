@@ -170,6 +170,9 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
+# Disable APEX compression
+PRODUCT_COMPRESSED_APEX := false
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-impl \
