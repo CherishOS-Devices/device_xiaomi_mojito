@@ -181,11 +181,11 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/system_ext.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/configs/odm.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/vendor.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/product.prop
+TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/configs/system_ext.prop
 
 # Recovery
 ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS),true)
