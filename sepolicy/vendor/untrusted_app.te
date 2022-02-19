@@ -1,1 +1,5 @@
 get_prop(untrusted_app, vendor_persist_camera_prop)
+
+allow untrusted_app ab_update_gki_prop:file { getattr  map  open };
+allow untrusted_app aac_drc_prop:file { getattr  map  open };
+

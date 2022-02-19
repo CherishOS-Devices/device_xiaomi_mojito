@@ -4,6 +4,11 @@ allow system_app vendor_sysfs_battery_supply:file { open };
 allow system_app vendor_sysfs_battery_supply:file { getattr };
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
+allow system_app hal_power_default:binder { call };
+allow system_app hal_vibrator_default:binder { call };
+allow system_app installd:binder { call };
+allow system_app netd:binder { call };
+allow system_app proc_pagetypeinfo:file { getattr  open  read };
 
 r_dir_file(system_app, vendor_sysfs_battery_supply)
 
