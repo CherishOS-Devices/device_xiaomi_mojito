@@ -1,12 +1,12 @@
 #
-# Copyright (C) 2021 The PixelExperience Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter mojito sweet tucana,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),mojito)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
