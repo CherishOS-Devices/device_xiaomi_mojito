@@ -5,7 +5,7 @@
 //
 
 cc_library_static {
-    name: "libinit_xiaomi_sm6150",
+    name: "libinit_xiaomi_mojito",
     srcs: [
         "libinit_dalvik_heap.cpp",
         "libinit_variant.cpp",
