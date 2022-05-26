@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.overlay.xiaomi_sm6150_common">
+    package="com.android.overlay.xiaomi_mojito">
 
     <overlay
         android:isStatic="true"

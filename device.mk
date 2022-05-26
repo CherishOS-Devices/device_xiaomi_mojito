@@ -327,13 +327,13 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    CarrierConfigSM6150 \
-    FrameworksSM6150 \
-    SettingsProviderSM6150 \
-    SettingsSM6150 \
-    SystemUISM6150 \
-    TelephonySM6150 \
-    WifiSM6150
+    CarrierConfigMojito \
+    FrameworksMojito \
+    SettingsProviderMojito \
+    SettingsMmojito \
+    SystemUIMojito \
+    TelephonyMojito \
+    WifiMojito
 
 # Perf
 PRODUCT_PACKAGES += \

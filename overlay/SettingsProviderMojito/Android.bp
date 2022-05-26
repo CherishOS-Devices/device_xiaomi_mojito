@@ -1,6 +1,6 @@
 runtime_resource_overlay {
-    name: "SettingsProviderSM6150",
-    theme: "SettingsProviderSM6150",
+    name: "SettingsProviderMojito",
+    theme: "SettingsProviderMojito",
     sdk_version: "current",
     vendor: true,
 }
