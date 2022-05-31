@@ -1,2 +1,4 @@
 get_prop(vendor_wcnss_service, vendor_bluetooth_prop)
 allow vendor_wcnss_service proc_net:file { getattr  read };
+allow vendor_wcnss_service vendor_wifi_vendor_wpa_socket:dir create_dir_perms;
+allow vendor_wcnss_service vendor_wifi_vendor_wpa_socket:sock_file create_file_perms;
