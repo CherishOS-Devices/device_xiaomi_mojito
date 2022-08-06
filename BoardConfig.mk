@@ -107,6 +107,9 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
+# Compression
+PRODUCT_FS_COMPRESSION := 1
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_mojito
 
