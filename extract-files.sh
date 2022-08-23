@@ -57,6 +57,13 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/sensors/hals.conf)
+            # Remove touchfeature from sensor HALs loading list
+            sed -i "/sensors.touch.detect.so/d" "${2}"
+            ;;
+        vendor/lib64/camera/components/com.qti.node.watermark.so)
+            "${PATCHELF}" --add-needed "libwatermark_shim.so" "${2}"
+            ;;
     esac
 }
 
