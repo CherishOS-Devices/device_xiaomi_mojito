@@ -855,6 +855,7 @@ vendor/etc/public.libraries.txt
 
 # Neural Networks
 -vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
+-vendor/bin/npu_launcher
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
@@ -865,6 +866,7 @@ vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 -vendor/lib64/unnhal-acc-common.so
 -vendor/lib64/unnhal-acc-hta.so
 -vendor/lib64/unnhal-acc-hvx.so
+-vendor/lib64/libhvx_interface.so
 
 # Peripheral Manager
 -vendor/bin/pm-proxy
