@@ -554,3 +554,7 @@ PRODUCT_PACKAGES += \
 # Wlan
 PRODUCT_CFI_INCLUDE_PATHS += \
     hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
+
+# Remove Gapps
+PRODUCT_PACKAGES += \
+    RemovePackages
