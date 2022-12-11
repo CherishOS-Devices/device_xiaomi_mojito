@@ -59,7 +59,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
 # Board
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/configs/board-info.txt
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sm6150
@@ -175,11 +175,11 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/configs/odm.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/system.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/vendor.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/product.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/system_ext.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab_AB.qcom
