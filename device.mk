@@ -204,6 +204,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
 
+# DisplayFeatures
+PRODUCT_PACKAGES += \
+    DisplayFeatures
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0.vendor \
@@ -369,6 +373,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_PACKAGES += \
     CarrierConfigMojito \
+    DisplayFeaturesMojito \
     EvolutionSettingsResTarget \
     FrameworksMojito \
     SettingsProviderMojito \
@@ -376,6 +381,7 @@ PRODUCT_PACKAGES += \
     SystemUIMojito \
     TelephonyMojito \
     WifiMojito
+
 
 # Perf
 PRODUCT_PACKAGES += \
