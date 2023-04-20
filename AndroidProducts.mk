@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_mojito.mk
+    $(LOCAL_DIR)/cherish_mojito.mk
